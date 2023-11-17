@@ -1,0 +1,35 @@
+.hover-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-trigger {
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+   
+    top: 100%;
+    left: 0;
+    z-index:1000;
+    /* display: none; */
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  
+  .hover-dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-option {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .dropdown-option:hover {
+    background-color: #f0f0f0;
+  }
+  

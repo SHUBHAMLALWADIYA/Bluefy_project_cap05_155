@@ -1,0 +1,22 @@
+@import url("../src/fonts/fonts.css");
+body{
+    font-family: 'FuturaFonts',"sans-serif";
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+.blackDiv{
+    background-color: black;
+    color: white;
+   padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.spanWelcome{
+    font-weight: 600;
+}
+p{
+    cursor: pointer;
+}

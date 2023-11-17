@@ -1,0 +1,85 @@
+/* ImageSlider.css */
+.image-slider-container {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  .image-slider {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    overflow: hidden;
+  }
+  
+  .image-block {
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    padding: 8px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .recButtons {
+    
+   background-color: rgb(11, 11, 11);
+   color: rgb(239, 235, 235);
+    margin-left: 2px;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 0%;
+  }
+
+  .recButtonsDiv{
+   width: fit-content;
+  
+   margin-left: 90%;
+  }
+  
+  .recommmandedPtag{
+text-align: center;
+font-size: 26.6px;
+font-weight: 500;
+  }
+
+
+
+
+  @media all and (min-width: 1024px) {
+    .image-slider{
+      grid-template-columns: repeat(4,1fr);
+    }
+    
+  }
+  /* medium screen */
+  @media all and (min-width: 768px) and (max-width: 1023px) {
+    .image-slider{
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+  /* small screen */
+  @media all and (min-width: 517px) and (max-width: 767px) {
+    .image-slider{
+      grid-template-columns: repeat(2,1fr);
+    }
+    .recommmandedPtag{
+      font-size: 20px;
+    }
+    .recButtons{
+      font-size: 15px;
+    }
+  }
+  /* extra small */
+  @media all and (max-width: 516px) {
+    .image-slider{
+      grid-template-columns: repeat(2,1fr);
+    }
+    .recommmandedPtag{
+      font-size: 15px;
+    }
+    .recButtons{
+      font-size: 15px;
+    }
+  }
